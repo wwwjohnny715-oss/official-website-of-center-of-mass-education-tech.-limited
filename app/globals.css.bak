@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-cyan: #22d3ee;
+  --primary-teal: #14b8a6;
+  --whatsapp-green: #25D366;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-noto-sans-hk), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--primary-cyan);
+  outline-offset: 2px;
+}
+
+/* Card hover effect */
+.card-hover {
+  @apply transition-all duration-300;
+}
+
+.card-hover:hover {
+  @apply shadow-card-hover -translate-y-1;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-teal-500;
+}
+
+/* Tech glow effect */
+.tech-glow {
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.15);
+}
+
+.tech-glow-hover:hover {
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.25);
+}
+
+/* Section background patterns */
+.section-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(34, 211, 238, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(20, 184, 166, 0.03) 0%, transparent 50%);
+}
+
+/* WhatsApp button glow animation */
+@keyframes whatsapp-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.5);
+  }
+}
+
+.whatsapp-glow {
+  animation: whatsapp-glow 2s ease-in-out infinite;
+}
+
+/* Safe area support for fixed elements */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
