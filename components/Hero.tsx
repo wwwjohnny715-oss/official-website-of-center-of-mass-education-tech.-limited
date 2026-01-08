@@ -72,7 +72,7 @@ export default function Hero() {
             </div>
 
             {/* Free Trial Button */}
-            <div className="mt-8 flex justify-center lg:justify-start">
+            <div className="mt-8 flex flex-col items-center lg:items-start gap-3">
               <a
                 href="https://trial-booking-system.pages.dev/"
                 target="_blank"
@@ -94,6 +94,10 @@ export default function Hero() {
                 </span>
                 <span className="text-yellow-300 text-2xl">⭐</span>
               </a>
+              <p className="text-sm text-gray-500 flex items-center gap-1">
+                <span>*填寫好表格並提交後，會有職員盡快聯絡閣下。</span>
+                <span className="text-lg">👍</span>
+              </p>
             </div>
           </div>
 
