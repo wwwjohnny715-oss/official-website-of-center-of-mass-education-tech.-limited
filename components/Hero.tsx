@@ -77,26 +77,22 @@ export default function Hero() {
                 href="https://trial-booking-system.pages.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-orange-400 via-orange-500 to-amber-500 rounded-full shadow-xl hover:shadow-2xl hover:shadow-orange-500/40 hover:scale-110 transition-all duration-300 animate-pulse hover:animate-none"
+                className="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 rounded-full shadow-[0_8px_30px_rgba(249,115,22,0.7)] hover:shadow-[0_12px_40px_rgba(249,115,22,0.9)] hover:scale-110 transition-all duration-300 border-4 border-yellow-400 animate-bounce"
               >
-                {/* Glow effect */}
-                <span className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-400 to-amber-500 blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
+                {/* Star icon */}
+                <span className="text-yellow-300 text-2xl">⭐</span>
                 
-                {/* Sparkle effects */}
-                <span className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-300 rounded-full animate-ping" />
-                <span className="absolute -bottom-1 -left-1 w-2 h-2 bg-orange-300 rounded-full animate-ping" style={{ animationDelay: '0.5s' }} />
-                
-                <span className="relative text-white font-bold text-xl">立即登記</span>
+                <span className="text-white font-black text-xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">立即登記</span>
                 <span 
-                  className="relative font-black text-xl"
+                  className="font-black text-2xl"
                   style={{
-                    color: '#FF6B00',
-                    textShadow: '-2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, 0 0 10px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,0.8)'
+                    color: '#FFFF00',
+                    textShadow: '-2px -2px 0 #FF4500, 2px -2px 0 #FF4500, -2px 2px 0 #FF4500, 2px 2px 0 #FF4500, 0 0 12px #FF4500'
                   }}
                 >
                   免費試堂
                 </span>
-                <span className="relative group-hover:translate-x-2 transition-transform text-white text-xl font-bold">→</span>
+                <span className="text-yellow-300 text-2xl">⭐</span>
               </a>
             </div>
           </div>
