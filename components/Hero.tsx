@@ -72,23 +72,31 @@ export default function Hero() {
             </div>
 
             {/* Free Trial Button */}
-            <div className="mt-6 flex justify-center lg:justify-start">
+            <div className="mt-8 flex justify-center lg:justify-start">
               <a
                 href="https://trial-booking-system.pages.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-gray-200 rounded-full shadow-md hover:shadow-lg hover:border-orange-300 hover:scale-105 transition-all duration-300"
+                className="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-orange-400 via-orange-500 to-amber-500 rounded-full shadow-xl hover:shadow-2xl hover:shadow-orange-500/40 hover:scale-110 transition-all duration-300 animate-pulse hover:animate-none"
               >
-                <span className="text-gray-700 font-medium">立即登記</span>
+                {/* Glow effect */}
+                <span className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-400 to-amber-500 blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
+                
+                {/* Sparkle effects */}
+                <span className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-300 rounded-full animate-ping" />
+                <span className="absolute -bottom-1 -left-1 w-2 h-2 bg-orange-300 rounded-full animate-ping" style={{ animationDelay: '0.5s' }} />
+                
+                <span className="relative text-white font-bold text-xl">立即登記</span>
                 <span 
-                  className="font-bold text-orange-500"
+                  className="relative font-black text-xl"
                   style={{
-                    textShadow: '-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 8px rgba(255,255,255,0.8)'
+                    color: '#FF6B00',
+                    textShadow: '-2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, 0 0 10px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,0.8)'
                   }}
                 >
                   免費試堂
                 </span>
-                <span className="group-hover:translate-x-1 transition-transform text-orange-500">→</span>
+                <span className="relative group-hover:translate-x-2 transition-transform text-white text-xl font-bold">→</span>
               </a>
             </div>
           </div>
