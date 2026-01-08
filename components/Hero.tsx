@@ -120,20 +120,20 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
               </div>
 
-              {/* Floating badges */}
-              <div className="absolute -left-6 top-1/4 bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg shadow-cyan-500/15 px-4 py-3 animate-float border border-cyan-100">
+              {/* Fixed badges */}
+              <div className="absolute -left-6 top-1/4 bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg shadow-cyan-500/15 px-4 py-3 border border-cyan-100">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">📚</span>
                   <span className="font-medium text-gray-700">名校題目</span>
                 </div>
               </div>
-              <div className="absolute -right-6 bottom-1/4 bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg shadow-teal-500/15 px-4 py-3 animate-float border border-teal-100" style={{ animationDelay: '1s' }}>
+              <div className="absolute -right-6 bottom-1/4 bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg shadow-teal-500/15 px-4 py-3 border border-teal-100">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">👥</span>
                   <span className="font-medium text-gray-700">4人小班</span>
                 </div>
               </div>
-              <div className="absolute left-1/2 -translate-x-1/2 -bottom-4 bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-full shadow-lg shadow-cyan-500/30 px-5 py-2 animate-float" style={{ animationDelay: '0.5s' }}>
+              <div className="absolute left-1/2 -translate-x-1/2 -bottom-4 bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-full shadow-lg shadow-cyan-500/30 px-5 py-2">
                 <div className="flex items-center gap-2">
                   <span className="text-lg">🎯</span>
                   <span className="font-medium text-sm">DSE 補習班</span>
