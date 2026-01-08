@@ -70,6 +70,27 @@ export default function Hero() {
                 只接受 WhatsApp 文字查詢（不接來電）
               </div>
             </div>
+
+            {/* Free Trial Button */}
+            <div className="mt-6 flex justify-center lg:justify-start">
+              <a
+                href="https://trial-booking-system.pages.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-gray-200 rounded-full shadow-md hover:shadow-lg hover:border-orange-300 hover:scale-105 transition-all duration-300"
+              >
+                <span className="text-gray-700 font-medium">立即登記</span>
+                <span 
+                  className="font-bold text-orange-500"
+                  style={{
+                    textShadow: '-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 8px rgba(255,255,255,0.8)'
+                  }}
+                >
+                  免費試堂
+                </span>
+                <span className="group-hover:translate-x-1 transition-transform text-orange-500">→</span>
+              </a>
+            </div>
           </div>
 
           {/* Image / Visual */}
